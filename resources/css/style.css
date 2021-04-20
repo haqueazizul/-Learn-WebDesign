@@ -9,6 +9,7 @@
 
 html{
 	font-size:62.5%;
+	scroll-behavior: smooth;
 }
 body{
 	font-family: 'Titillium Web', sans-serif;
@@ -24,20 +25,14 @@ h1{
 	font-size: 4.2rem;
 	color: #fff;
 }
-.clearfix::after{
-	content: "";
-	display:block;
-	clear: both;
-	height: 0;
-	visibility: hidden;
-}
+
+
 
 /* ###### REUSABLE COMPONENTS ####### */
 
 .row{
 	max-width: 114rem;
 	margin: 0 auto;
-
 }
 section{
 	padding: 8rem 0;
@@ -66,6 +61,7 @@ h3{
 	font-size: 2.4rem;
 	text-transform: uppercase;
 	font-weight: 600;
+	color: #fff;
 }
 .box{
 	padding: 1%;
@@ -75,6 +71,7 @@ h3{
 	font-size: 1.6rem;
 	font-weight: 300;
 	margin-top: 2rem;
+	color: #fff;
 
 }
 /* ###### BUTTON ####### */
@@ -195,17 +192,66 @@ header{
 	margin-bottom: 3.5rem;
 }
 
-/*section{
-	background:url(img/bg1.jpg);
-	background:#17c2a4;
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	height: 85vh;
-	position: relative;
-	padding: 8rem 0;
-	color: #fff;
+/* ################ ####### */
+/* ###### TEAM  SECTION ####### */
+/* ###### ############# ####### */
+.team-section{
+	background: linear-gradient(rgba(231,241,248,0.9),rgba(231,241,248,0.9)), url(img/bg1.jpg);
 	text-align: center;
-	} 
-	*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+}
+.team-section h2{
+	color: #3c4761;
+}
+.team-section h2::after{
+	background: #c8d9e5;
+}
+.team-member{
+
+	margin-top: 4.5rem;
+	margin-bottom: 3.5rem;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+}
+.team-section h3{
+	color: #27283d;
+}
+.role{
+	color: #30bae7;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	margin-top: .6rem;
+	display: inline-block;
+}
+.team-section .box p{
+	color: #3c4761;
+}
+.social-link{
+	margin-top:4.5rem;
+}
+.social-link ul li{
+	display: inline-block;
+	margin:0 .5rem;
+
+}
+.social-link ul li a:link{
+	color: #fff;
+}
+.social-link ul li a:link i::before{
+	background:#bdd1df;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 2rem;
+	padding: 1rem;
+	transition: .5s;
+}
+.social-link ul li a:hover i::before{
+	background: #24f255;
+	transform: rotate(360deg);
+}
