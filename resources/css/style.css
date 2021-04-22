@@ -348,7 +348,11 @@ svg.ui-ux circle{
 	margin-left: 0;
 }
 
-.portfolio.section  .btn-load-more{
+.portfolio.section  .load-more-btn{
 	background: #17c2a4;
 	border-color: #14a58c;
+	
+}
+.portfolio-section .mixitup-control-active{
+	background: #fff;
 }
