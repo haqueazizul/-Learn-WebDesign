@@ -356,3 +356,101 @@ svg.ui-ux circle{
 .portfolio-section .mixitup-control-active{
 	background: #fff;
 }
+
+/* ################ ####### */
+/* ###### TESTIMONIAL  SECTION ####### */
+/* ###### ############# ####### */
+
+.testimonial{
+	background:#d74680;
+	}
+	.testimonial h2::after{
+	background: #b73c6d;
+}
+	.testimonial .little-description{
+		text-align: center;
+		color: #fff;
+	}
+	.testimonial .col:nth-child(3){
+		margin-left:0;
+	}
+	.testimonial .col:nth-child(1),
+	.testimonial .col:nth-child(2){
+		margin-top:4rem;
+	}
+	.testimonial .col:nth-child(3),
+	.testimonial .col:nth-child(4){
+		margin-top:8rem;
+	}
+	 .client-photo{
+		width: 10rem;
+		float:left;
+
+	}
+	.client-photo img{
+		height: 8rem;
+		border-radius: 50%;
+		margin-bottom: 3rem;
+	}
+	.client-review{
+		float: left;
+		width: 30rem;
+
+
+	}
+	
+	.client-review p{
+		font-size: 2.1rem;
+		font-style: italic;
+		margin-top:0;
+		margin-bottom: 2rem;
+	}
+	.client-review .role{
+		color:#ffdd99;
+	}
+
+
+/* ################ ####### */
+/* ###### CONTACT  SECTION ####### */
+/* ###### ############# ####### */
+
+.contact-section{
+	background: #3c5499;
+	text-align: center;
+}
+.contact-section h2::after{
+	background: #273a71;
+}
+.contact-section .little-description{
+	color: #fff;
+}
+.contact-section form{
+	margin-top:5rem;
+	width:70%;
+	margin-left:15%;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+	background: #273a71;
+	border:.1rem solid #273a71;
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: .5rem;
+	font-size: 1.8rem;
+	margin:.5rem 0;
+}
+.contact-section form ::placeholder {
+
+	color: #fff;
+	opacity: 1;
+}
+.btn-submit{
+	border:0;
+	border-bottom:.3rem solid #299ec5;
+	background: #30bae7;
+
+}
+.btn-submit:hover{
+	cursor: pointer;
+}
