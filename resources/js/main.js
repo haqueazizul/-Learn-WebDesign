@@ -2,27 +2,33 @@
 
 $(document) .ready(function(){
 
-	//STICKY MENUE
+	
+
+//MIXITUP
+var mixer = mixitup('.container');
+
+//STICKY MENUE
 	$(".js--services-section").waypoint(function(direction){
 		if (direction == "down") {
-			$("nav").addclass("sticky");
+		$("nav").addClass("sticky");
 
 		}
 		else{
-			$("nav").removeclass("sticky");
+			$("nav").removeClass("sticky");
 
 
 		}
 
 
 	});
-		
 
-
-
-
-
-//MIXITUP
-var mixer = mixitup('.container');
 
 });
+
+function openNav(){
+	document.getElementById("myNav").style.width ="100%";
+}
+function closeNav(){
+	document.getElementById("myNav").style.width ="0%";
+}
+
